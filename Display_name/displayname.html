@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input id="firstName" type="text" placeholder="Enter Name">
+	<input id="lastName" type="text" placeholder="Enter Name" >
+	<input type="button" onClick="updateInfo()" value="Click to Update">
+	<h1 id= "display"></h1>
+
+	
+	<script>
+		function updateInfo(){
+			var name = document.getElementById('firstName').value;
+			var lastName = document.getElementById('lastName').value;
+			  document.getElementById('display').innerHTML = "Hello " + name +
+			 + lastName;
+
+
+		}
+		
+
+	</script>
+
+</body>
+</html>
