@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1> Tropicana Juice Bar</h1>
+	<h1 id='fruit'></h1>
+
+	<input type="button" value="Click to Add"   onclick="fruitType()">
+	
+	
+<script> 
+	
+		
+		var fruit=["apple" , "orange" , "kiwi"];
+		 
+		 function fruitType(){
+        var user = prompt('Add your Favorite Fruit');
+        
+         	
+         	fruit.push(user.toLowerCase());
+         	fruit.sort();
+
+         	document.getElementById("fruit").innerHtML = "Your favorite fruits are" + fruit.join(" with ");
+         	console.log(fruit);
+
+         }
+
+	
+</script>
+</body>
+</html>
