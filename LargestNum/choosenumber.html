@@ -12,8 +12,21 @@
 			console.log(num2);
         var num3= parseInt(prompt ('Pick a number Between 1 and 5'));
         	console.log(num3);
-       if (num1<=5){document.getElementById("display").innerHTML= (num1)+ "is the largest number"
-   }
+       if(3 <= num1 && num2 <= 5){
+				document.getElementById('display').innerHTML ='Wrong';
+			}
+			else if(num3<4){
+				//if user picks under 4
+				document.getElementById("display").innerHTML ="Good Job";
+			}
+			else if(num2 >= 1 && num1 <4){
+				//if user picks between 1 and 4
+				document.getElementById('display').innerHTML ='Almost';
+			}
+			else{
+				document.getElementById('display').innerHTML = 'Not Quite !!';
+				alert('The Lagrgest Number!!');
+			}
 		
 	</script>
 
