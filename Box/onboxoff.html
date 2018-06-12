@@ -12,9 +12,9 @@
 </style>
 	<body>
 		
-		<input id="textmybt" type="button" value="on"></input>
+		<button id="textmybt" onclick="changeText()" value="on">on</button>
 		
-		<div id ="mybox"></div>
+		<div id ="mybox" onclick="changeColor()" value="true"></div>
 		<script>
 		
 			
@@ -24,23 +24,20 @@
 					buttn.innerHTML="off";
 				}
 				else{
-					buttn.innerHTML = "off";
+					buttn.innerHTML = "on";
 				}
-			}
-
-			document.getElementById("textmybt").addEventListener('click', changeText);
-
-			document.getElementById("textmybt").addEventListener('click', changeText);
-
 			function changeColor(){
-				var box = document.getElementById('mybox');
-				if(box.innerHTML=="<style ="background-color: green">"){
-					buttn.innerHTML="off";
-				}
-				else{
-					buttn.innerHTML = "off";
-				}
-			}
+ 				var color =document.getElementById("mybox");
+ 				if (buttn.innerHTML=="true"){
+ 					color.innerHTML="blue";
+ 				}
+ 			}
+
+		
+ }
+ 			
+ 
+			
 
 			
 		
