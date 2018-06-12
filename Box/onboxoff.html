@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+	div{background-color: red;
+		border:1px solid;
+		padding: 50px;
+
+	}
+</style>
+	<body>
+		
+		<input id="textmybt" type="button" value="on"></input>
+		
+		<div id ="mybox"></div>
+		<script>
+		
+			
+			function changeText(){
+				var buttn = document.getElementById('textmybt');
+				if(buttn.innerHTML=="on"){
+					buttn.innerHTML="off";
+				}
+				else{
+					buttn.innerHTML = "off";
+				}
+			}
+
+			document.getElementById("textmybt").addEventListener('click', changeText);
+
+			document.getElementById("textmybt").addEventListener('click', changeText);
+
+			function changeColor(){
+				var box = document.getElementById('mybox');
+				if(box.innerHTML=="<style ="background-color: green">"){
+					buttn.innerHTML="off";
+				}
+				else{
+					buttn.innerHTML = "off";
+				}
+			}
+
+			
+		
+		</script>
+
+</body>
+</html>
