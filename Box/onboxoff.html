@@ -14,27 +14,34 @@
 		
 		<button id="textmybt" onclick="changeText()" value="on">on</button>
 		
-		<div id ="mybox" onclick="changeColor()" value="true"></div>
+		<div id ="mybox" onmouseover="changeColor()" value="on"></div>
 		<script>
+			var buttn = document.getElementById('textmybt');
 		
 			
 			function changeText(){
-				var buttn = document.getElementById('textmybt');
+
+				
 				if(buttn.innerHTML=="on"){
 					buttn.innerHTML="off";
 				}
 				else{
 					buttn.innerHTML = "on";
 				}
+			}
+
 			function changeColor(){
- 				var color =document.getElementById("mybox");
- 				if (buttn.innerHTML=="true"){
- 					color.innerHTML="blue";
+ 				var colors =document.getElementById("mybox");
+ 				if (buttn.innerHTML=="on"){
+ 					colors.style.backgroundColor="yellow"
  				}
+ 				else{
+					colors.innerHTML = "green";
+				}
  			}
 
 		
- }
+ 
  			
  
 			
